@@ -12,7 +12,7 @@ module.exports = {
     filename: '[name].bundle.js',
     clean: true,
     publicPath: '/',
-    path: path.resolve(__dirname, './docs'),
+    path: path.resolve(__dirname, './dist'),
   },
   plugins: [
     new HtmlWebpackPlugin({
