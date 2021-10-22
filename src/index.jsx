@@ -4,7 +4,16 @@ import ReactDOM from 'react-dom';
 import { Header } from './components/Header';
 import { headerConfig } from './mocks/header-config';
 
-const App = () => <Header config={headerConfig}/>;
+import classes from './App.module.scss';
+
+const App = () => (
+  <>
+    <h1 className={classes.h1}>
+      Header implementation example
+    </h1>
+    <Header config={headerConfig}/>
+  </>
+);
 
 ReactDOM.render(
   <App />,

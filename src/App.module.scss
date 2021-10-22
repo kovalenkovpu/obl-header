@@ -1,0 +1,5 @@
+@use './styles/typography.scss';
+
+.h1 {
+  @include typography.h1();
+}
