@@ -1,0 +1,15 @@
+.popoverWrapper {
+  display: none;
+  position: absolute;
+  border: 1px solid gray;
+  border-radius: 4px;
+  top: calc(100% - 4px);
+  left: 1rem;
+  background-color: lightgray;
+  padding: 1rem;
+
+  &.visible {
+    display: block;
+    min-width: 100px;
+  }
+}

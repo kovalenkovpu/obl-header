@@ -1,0 +1,43 @@
+.mainNavItem {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  padding: 0 10px;
+  list-style: none;
+  font-weight: 400;
+
+  &.innerItem {
+    padding: 0;
+  }
+
+  &.selected {
+    background-color: black;
+  }
+}
+
+.mainNavItemLink {
+  color: white;
+  text-decoration: none;
+  
+  &.innerItem {
+    color: black;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.mainNavItemText {
+  &.innerItem {
+    margin: 4px 0;
+  }
+}
+
+.mainNavItemIconImg {
+  height: 1.5rem;
+  width: 1.5rem;
+  color: white;
+}

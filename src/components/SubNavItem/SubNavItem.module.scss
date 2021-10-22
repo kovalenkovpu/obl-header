@@ -1,0 +1,35 @@
+.subNavItem {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  padding: 0 10px;
+  list-style: none;
+  font-weight: 400;
+
+  &.selected {
+    text-decoration: underline;
+  }
+}
+
+.subNavItemLink {
+  color: white;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.subNavItemText {
+  &.innerItem {
+    margin: 4px 0;
+  }
+}
+
+.subNavItemIconImg {
+  height: 1.5rem;
+  width: 1.5rem;
+  color: white;
+}

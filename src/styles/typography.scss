@@ -1,0 +1,42 @@
+:root {
+  /* Pearson Brand Colors Token */
+  --color-pearson-pearson-blue: rgba(0, 127, 163, 1);
+  --color-pearson-accent-bright-orange: rgba(255, 187, 28, 1);
+  --color-pearson-accent-lime-green: rgba(210, 219, 14, 1);
+  --color-pearson-accent-sky-blue: rgba(148, 231, 234, 1);
+  --color-pearson-accent-coral-pink: rgba(255, 117, 122, 1);
+  --color-pearson-accent-fresh-green: rgba(132, 189, 0, 1);
+  --color-pearson-accent-marine-turquoise: rgba(18, 178, 166, 1);
+  --color-pearson-accent-royal-purple: rgba(158, 0, 126, 1);
+  --color-pearson-accent-grass-green: rgba(0, 134, 56, 1);
+  --color-pearson-accent-midnight-blue: rgba(0, 48, 87, 1);
+  --color-pearson-neutrals-ink-black: rgba(0, 0, 0, 1);
+  --color-pearson-neutrals-mist-grey: rgba(223, 225, 225, 1);
+
+  /* Pearson H1 Token */
+  --font-pearson-h1-font-size: 59;
+  --font-pearson-h1-text-decoration: none;
+  --font-pearson-h1-font-family: Open Sans;
+  --font-pearson-h1-font-weight: 300;
+  --font-pearson-h1-font-style: normal;
+  --font-pearson-h1-letter-spacing: 0;
+  --font-pearson-h1-line-height: 1.5;
+  --font-pearson-h1-text-case: none;
+
+  /* Spacing Token */
+  --spacing-reset: 0;
+  --spacing-base: 4px;
+}
+
+@mixin h1() {
+  display: block;
+  font-family: var(--font-pearson-h1-font-family), Sans-Serif;
+  font-size: calc(var(--font-pearson-h1-font-size) / 16 * 1rem);
+  font-weight: var(--font-pearson-h1-font-weight);
+  font-style: var(--font-pearson-h1-font-style);
+  line-height: var(--font-pearson-h1-line-height);
+  color: var(--color-pearson-neutrals-ink-black);
+  margin: var(--spacing-reset);
+  margin-bottom: calc(var(--spacing-base) * 3);
+  padding: var(--spacing-reset);
+}
